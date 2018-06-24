@@ -5,6 +5,5 @@
 - State of Project Colony is 1) Projects (colonies) can be created 2) Projects can be changed 3) Tasks can be added to projects (colonies)
 
 ## Additional Materials
-+
-+Visit [HERE for a description](https://colony-hackathon.appspot.com/landing)
-+and  [HERE for the live app](https://colony-hackathon.appspot.com/app)
+Visit [HERE for a description](https://colony-hackathon.appspot.com/landing)
+and  [HERE for the live app](https://colony-hackathon.appspot.com/app)
