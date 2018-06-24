@@ -1,0 +1,34 @@
+{
+  "name": "colony-hackathon",
+  "version": "0.0.1",
+  "description": "Colony Hackathon. ",
+  "main": "dist/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "./node_modules/.bin/tsc",
+    "start": "node build/app.js",
+    "deploy": "npm run compile && gcloud app deploy",
+    "start-ganache": "./node_modues/.bin/ganache-cli -d --gasLimit 7000000 --acctKeys ganache-accounts.json &",
+    "start-deploy-contracts": "./node_modules/.bin/truffle migrate --reset --compile-all",
+    "start-truffle-pig": "./node_modules/.bin/trufflepig --ganacheKeyFile ganache-accounts.json > ./node_modules/trufflepig.log &"
+  },
+  "keywords": [
+    "colony",
+    "blockchain",
+    "typescript"
+  ],
+  "author": "Tobias Wiens",
+  "license": "SEE LICENSE IN license.txt",
+  "dependencies": {
+    "@colony/colony-js-adapter-ethers": "^1.4.1",
+    "@colony/colony-js-client": "^1.4.1",
+    "@colony/colony-js-contract-loader-http": "^1.4.1",
+    "@google-cloud/datastore": "^1.4.0",
+    "@types/google-cloud__datastore": "^1.3.1",
+    "ethers": "^3.0.22",
+    "express": "^4.16.3"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0"
+  }
+}
