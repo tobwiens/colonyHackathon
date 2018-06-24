@@ -17,10 +17,10 @@ app.use(function(request: express.Request, response: express.Response, next) {
 
 app.use("/app", express.static('app/'));
 
-app.use("/landing", express.static('dev/'));
+app.use("/landing", express.static('landing/'));
 
 app.get('/', (request: express.Request, response: express.Response) => {
-    response.status(200).send("Hello App Engine").end();
+    response.status(200).send("Please visit: https://colony-hackathon.appspot.com/landing/").end();
 });
 
 app.post("/colonies/create", createColonyTokenRequest);
